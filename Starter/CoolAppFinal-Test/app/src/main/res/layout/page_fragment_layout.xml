@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timboat.coolapp.PageFragment"
+    android:orientation="vertical"
+    android:id="@+id/entire_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gear"
+        android:adjustViewBounds="true"
+        android:maxHeight="35dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/wish_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginLeft="133dp"
+        android:text="Wishlist"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/secondaryColorLight"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"/>
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bubble_open_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="335dp"
+        android:src="@drawable/ic_action_plus"
+        android:elevation="6dp"
+        app:backgroundTint="@color/colorAccent"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bubble_element2"
+        android:src="@drawable/ic_action_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="335dp"
+        android:elevation="6dp"
+        android:adjustViewBounds="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bubble_element1"
+        android:src="@drawable/ic_action_tshirt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="335dp"
+        android:elevation="6dp"
+        app:backgroundTint="@color/colorPrimaryLight"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bubble_element3"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginLeft="335dp"
+        android:elevation="6dp"
+        app:backgroundTint="@color/secondaryColorLight"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapFragment"
+        android:visibility="visible"/>
+
+        <ListView
+            android:id="@+id/have"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mapFragment"
+            android:visibility="invisible"/>
+
+
+</RelativeLayout>

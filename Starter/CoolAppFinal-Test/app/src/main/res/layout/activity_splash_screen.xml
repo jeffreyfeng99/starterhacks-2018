@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/white_background"
+    tools:context="com.timboat.coolapp.SignUp">
+
+    <!--> App logo Gif <!-->
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:maxHeight="325dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginLeft="43dp"/>
+    <!--> App logo <!-->
+    <ImageView
+        android:id="@+id/last_frame"
+        android:src="@drawable/logo_last_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="175dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="100dp"
+        android:visibility="invisible"
+        android:transitionName="app_logo"/>
+
+    <ImageView
+        android:id="@+id/start_frame"
+        android:src="@drawable/logo_starting_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxHeight="175dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginLeft="100dp"
+        android:visibility="visible"
+        android:transitionName="app_logo"/>
+
+    <ImageView
+        android:id="@+id/slogan_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slogan"
+        android:adjustViewBounds="true"
+        android:maxWidth="275dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="70dp"/>
+
+
+
+</RelativeLayout>
